@@ -1,6 +1,6 @@
 package main
 
-import "github.com/rbastic/photosrv"
+import "github.com/photosrv/photosrv"
 
 func main() {
 	photosrv.Run()

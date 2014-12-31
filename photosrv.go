@@ -28,7 +28,7 @@ import (
 	"github.com/facebookgo/grace/gracehttp"
 	"github.com/golang/glog"
 	"github.com/peterbourgon/g2g"
-	"github.com/rbastic/photosrv/storage"
+	"github.com/photosrv/photosrv/storage"
 )
 
 // Config is the current photosrv configuration
