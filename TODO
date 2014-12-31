@@ -1,0 +1,48 @@
+
+Merge latest cmd/* in.
+
+Diff against Booking photosrv.
+
+Fix remaining golint.
+
+Tests
+    * Test secret key support
+    * rebalancing
+    * Test original mode, 
+    * test multi-HEAD timeout mode, figure out how to test latency issues
+    automatically (?)
+
+Incorporate photosrv_replay, logrunner, et cetera.
+
+Documentation
+    * SETUP
+    * config files
+    * rosters
+    * weighted shard declarations
+    * shardsprites
+    * node repair process
+    * migration process
+        * migration versus rebalancing
+    * nginx/webDAV setup
+    * etc
+
+Miscellaneous
+    * Add photosrv_replay into build_and_tar
+    * Add support to config file for Read/Write timeouts instead of just 
+        having it as a command-line flag, multihead timeout MS, any 
+        other flags that aren't covered?
+    * node-based metadata daemon to allow automatic node repair/replication,
+        including cross-data center (currently under design/development)
+
+Clean-ups
+    * Clean up photosrv.cfg
+    * Clean up photosrv-advanced.cfg
+    * Clean up TODOs in code.
+
+Roster / membership system
+    * (see memberlist package on github?)
+
+Tooling
+    * photosrv-mgr
+    * dashboard for real-time cluster monitoring?
+

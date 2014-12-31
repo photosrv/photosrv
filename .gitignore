@@ -1,0 +1,11 @@
+*~
+photosrv
+*.tgz
+*.heap
+build/
+cmd/logcrunch/logrunner
+cmd/logcrunch/logcrunch
+cmd/logcrunch-s/logcrunch-s
+cmd/photosrv_replay/photosrv_replay
+cmd/shardsprites/shardsprites
+main

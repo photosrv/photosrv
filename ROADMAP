@@ -1,0 +1,6 @@
+
+SSL support
+HTTP2
+metadata daemon
+replication support (?) automatic node repair/rebalancing/migration
+PUT support in photosrv?

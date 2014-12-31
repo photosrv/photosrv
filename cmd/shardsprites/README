@@ -1,0 +1,20 @@
+
+This program distributes images to photosrv storage nodes. You should create a
+list of filesystem paths representing a list of URLs.
+
+The requests for the URLs can be sent via a dedicated outbound proxy.  This
+proxy can be changed with the -proxy flag.
+
+To run (in a screen or tmux session):
+
+http_proxy= GOMAXPROCS=8 ./shardsprites -c /etc/photosrv.cfg -w 8 -dc yourDc -f urls.txt > retry-yourDc.txt
+
+Failed URLs will be printed to stdout so they can be retried.  shardsprites
+will connect to the storage machines via the web-proxy in the environment,
+which is why we clear it before running.
+
+Progress and ETA is printed to stderr.
+
+I've played with the number of concurrent workers, and determined that more
+than 8 only hurts the proxy and increases the failure rate and doesn't offer
+any speed-up for the transfer.
