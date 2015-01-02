@@ -1,6 +1,10 @@
 
 Merge latest cmd/* in.
 
+Add initd file.
+
+Include sample nginx file.
+
 Diff against Booking photosrv.
 
 Fix remaining golint.
