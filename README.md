@@ -4,9 +4,10 @@
 
 Photosrv is a consistently hashed HTTP router aimed at distributing static content.
 
-It allows you to configure dozens or even hundreds of individual machines
-responsible for storing hundreds of millions of files. The system is best
-employed in conjunction with CDN(s).
+It allows you to configure dozens of photosrv daemons and hundreds of underlying
+nginx storage nodes, capable of storing and serving billions of files with low-
+latenc (100ms or under with sufficient hardware). The system has been employed in
+conjunction with multiple CDN(s).
 
 You can effectively consider it a load balancer for your static content.
 
