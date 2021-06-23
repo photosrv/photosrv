@@ -73,7 +73,7 @@ You have to manage your own metadata, i.e. track your own files.
 Replication is currently implemented in the clients - not the server/cluster.
 
 There is tooling provided for manual node repair. A gossip-based automated
-node repair and metadata storage mechanism is under development.
+node repair and metadata storage mechanism could perhaps be developed.
 
 You can not 'ls somebucket' and get a list of existing files. This works more
 like a distributed key-value store for arbitrarily sized blobs, where you just
